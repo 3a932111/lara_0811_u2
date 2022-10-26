@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return 'index';
+        /*練習7-3 設定回傳預設首頁*/
+        return view('welcome');
     }
 }
