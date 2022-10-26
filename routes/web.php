@@ -52,3 +52,8 @@ Route::get('good',function (){
 Route::get('hello/{name?}',function ($name='Everbody'){
    return 'Hello,'.$name;
 })->name("hello.index");
+
+/* 練習5-1 設定 dashboard路徑的 Route*/
+Route::get('dashboard',function(){
+    return 'dashboard';
+});
