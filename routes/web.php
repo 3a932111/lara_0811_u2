@@ -23,3 +23,12 @@ Route::get('/', function () {
 Route::get('/',function (){
     return 'welcome';
 });
+
+/*練習1-3 設定 Route 跳轉頁面*/
+Route::get('r1',function (){
+   return redirect('r2');
+});
+
+Route::get('r2',function (){
+    return view('welcome');
+});
