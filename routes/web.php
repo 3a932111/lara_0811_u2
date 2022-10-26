@@ -38,4 +38,7 @@ Route::get('hello/{name}',function ($name){
     return 'Hello,'.$name;
 });
 
-
+/*練習 2-2：修改參數成選擇性*/
+Route::get('hello/{name?}',function ($name='everybody'){
+    return 'Hello,'.$name;
+});
