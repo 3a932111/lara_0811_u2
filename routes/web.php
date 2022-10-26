@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+/*(上下行)練習7-2 編輯route/web.php*/
+Route::get('home', [HomeController::class, 'index'])->name('home.index');
 
 /*
 |--------------------------------------------------------------------------
