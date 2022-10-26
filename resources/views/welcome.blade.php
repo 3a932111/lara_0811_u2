@@ -10,6 +10,10 @@
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
             <!--練習4-2 增加一個連結-->
         <a href="{{route('hello.index')}}}">Hello</a>
+            <!--練習4-補充練習-->
+        <a href="{{route('hello.index',['name'=>'tom'])}}">Hello2</a>
+        <a href="/Hello/tom">Hello3</a>>
+
 
         <!-- Styles -->
         <style>
