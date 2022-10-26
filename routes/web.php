@@ -14,7 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-/*練習一 利用view('welcome')函數，view()可以依welcome.blade.php內容產生網頁*/
+/*練習1-1 利用view('welcome')函數，view()可以依welcome.blade.php內容產生網頁*/
 Route::get('/', function () {
     return view('welcome');
+});
+
+/*練習1-2 設定 Route 回傳字串*/
+Route::get('/',function (){
+    return 'welcome';
 });
