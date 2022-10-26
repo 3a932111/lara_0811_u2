@@ -42,3 +42,8 @@ Route::get('hello/{name}',function ($name){
 Route::get('hello/{name?}',function ($name='everybody'){
     return 'Hello,'.$name;
 });
+
+/*練習3 使用 artisan 指令了解目前 route 內容-新增Route觀察Route table*/
+Route::get('good',function (){
+    return 'im good';
+});
