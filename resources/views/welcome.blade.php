@@ -8,6 +8,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+            <!--練習4-2 增加一個連結-->
+        <a href="{{route('hello.index')}}}">Hello</a>
 
         <!-- Styles -->
         <style>
