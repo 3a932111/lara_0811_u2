@@ -32,3 +32,10 @@ Route::get('r1',function (){
 Route::get('r2',function (){
     return view('welcome');
 });
+
+/*練習 2-1：修改 Route 接收參數*/
+Route::get('hello/{name}',function ($name){
+    return 'Hello,'.$name;
+});
+
+
