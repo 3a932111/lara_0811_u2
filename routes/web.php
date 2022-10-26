@@ -57,3 +57,20 @@ Route::get('hello/{name?}',function ($name='Everbody'){
 Route::get('dashboard',function(){
     return 'dashboard';
 });
+
+/*練習5-2 設定另一個 Route 以群組包起來設定 prefix*/
+Route::group(['prefix'=>'admin'],function (){
+    Route::get('dashboard',function(){
+        return 'admin dashboard';
+    });
+});
+
+
+
+
+
+
+
+
+
+
